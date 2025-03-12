@@ -123,10 +123,11 @@ header{
     color: #fff;
     border-radius: 0.5rem;
 }
-/* navbar ends */
-/* section 1 */
+
+/* Section1 */
 .section
 {
+    height: 70vh;
     width: 100%;
 }
 .section .section-container{
@@ -140,28 +141,27 @@ header{
     margin-bottom: 50px;
     font-family: 'Poppins',sans-serif;
     font-weight:300;
-    font-size: 70px;
+    font-size: 50px;
 }
 .section-container .title h1:after{
     content: "";
-    height: 8px;
-    width: 120px;
+    height: 5px;
+    width: 30%;
     background:linear-gradient(45deg,#6B01FF,#fff,#6B01FF);
     border-radius: 25px;
     display: block;
-    margin-top: -12px;
-    margin-left: 20px;
+    margin-left: 5rem;
 }
 .section-content{
     float: left;
     width: 50%;
 }
 .image-section{
+    margin-top: -6rem;
     float: right;
-    width: 28%;
+    width: 30%;
 }
 .image-section img{
-    margin-top: -6rem;
     width:100%;
     height: auto;
     border-radius: 1%;
@@ -169,133 +169,74 @@ header{
 }
 
 .section-content .section-article p{
+    margin-bottom: 1rem;
     color: var(--text-color);
     line-height: 1.5;
     font-family: 'Poppins',sans-serif;
     font-size: 17px;
     font-weight: 300;
-}
-/* What we offer Section */
-.what-section{
-    margin-top: 20rem;
-    margin-left:7rem ;
-}
-.what-section .what-title{
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-.what-section .what-container .what-content-section .what-content p{
-    text-align: center;
-    width: 70rem;
-    margin: auto;
-}
-.what-container .what-content-section .what-title{
-    margin-left: 39.5rem;
-}
-.image-cards-container
-{
-    display: grid;
-    place-items:center;
-    margin-inline: 1.5rem;
-    margin-right: 10rem;
-    padding-block: 5rem;
-}
-.card__container
-{
-    display: grid;
-    row-gap: 3.5rem;
-}
-.card__artical
-{
-    position: relative;
-    overflow: hidden;
-}
-.card__artical:hover .card__data{
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
-}
-@keyframes show-data{
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(-7rem);
-    }
-}
-.card__artical:hover{
-    animation: remove-overflow 2s forwards;
-}
-@keyframes remove-overflow{
-    to{
-        overflow: initial;
-    }
-}
-.card__artical:not(:hover){
-    animation: show-overflow 2s forwards;
-}
-.card__artical:not(:hover) .card__data{
-    animation: remove-data 1s forwards;
-}
-@keyframes remove-data{
-    0%{
-        transform: translateY(-7rem);
-    }
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(.5rem);
-    }
-}
-@keyframes show-overflow{
-    0%{
-        overflow: initial;
-        pointer-events: none;
-    }
-    50%{
-        overflow: hidden;
-    }
-}
-.card__image{
-    width: 328px;
-    border-radius: 1.5rem;
-}
-.card__data{
-    width: 280px;
-    background:linear-gradient(to right, #ebf4f5,#b5c6e0);
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 94%, 0.15);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -10rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity:0 ;
-    transition: opacity 1s 1s;
-}
-.card__Description{
-    display: block;
-    font-size: .813rem;
-    color: black;
-    margin-bottom: .25rem;
-}
-.card__title
-{
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: black;
-    margin-bottom: .75rem;
+
 }
 
-/* S4 section */
+
+/* section 1 ends */
+
+.article-container{
+    height: 40vh;
+    padding: 0px 100px;
+    margin-top: -5rem;
+}
+.article-container .article1{
+    height: 100%;
+    width: 50%;
+    color: white;
+    float: left;
+    padding: 20px;
+}
+.article-container .article1 h2{
+    font-size: 30px;
+}
+.article-container .article1 p{
+    margin-top: 1rem;
+    font-size: 18px;
+    width: 80%;
+    font-weight: 300;
+}
+.article-container .article2{
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    float: right;
+    padding: 20px;
+}
+.article-container .article2 h2{
+    font-size: 30px;
+}
+.article-container .article2 p{
+    font-size: 18px;
+    margin-top: 1rem;
+    width: 90%;
+    font-weight: 300;
+}
+
+.article-container .article1 li{
+    color: white;
+}
+.article-container .article1 ul{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+.article-container .article1 li::before{
+    content: "\2713";
+    color: white;
+    margin-right: 10px;
+    margin-left: 4rem;
+}
+
+
+/* section 3 start */
 .s4-container{
-    margin-top: -4rem;
-    min-height: 55vh;
     width: 100%;
-    /* background-color: white; */
 }
 .why-us-wrapper{
     padding: 5% 8%;
@@ -308,94 +249,49 @@ header{
 }
 .why h1{
     font-family: 'Poppins',sans-serif;
-    font-size: 5rem;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: transparent;
-    background-color: rgb(4, 52, 83);
-    background: linear-gradient(8deg,rgb(160, 41, 184) 0%,rgb(154, 44, 187) 41%,rgb(34, 109, 206) 100%);
+    font-size: 3rem;
+    color:#fff;
+    background: linear-gradient(45deg,#e81cff,#6B01FF); 
+    background-size: 200%;
+    background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite; 
     position: relative;
 }
-.why h1:after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    height: 8px;
-    width: 80%;
-    border-radius: 8px;
-    background-color: rgba(203, 184, 207, 0.459);
-}
-.why h1 span{
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    height:8px;
-    width: 8px;
-    border-radius: 50%;
-    background-color: rgb(154, 44, 187);
-    animation: anime 3s linear infinite;
-}
-@keyframes anime{
-    95%{
-        opacity: 1;
+@keyframes animate-gradient
+{
+    to{
+        background-position: 200%;
     }
-    100%{
-        opacity: 0;
-        left: 88%;
-    }
-}
-
-/* s4 section */
-.s4-container{
-    margin-top: -6rem;
 }
 .s4-cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .s4-card{
-    height: 280px;
+    height: 350px;
     width: 370px;
     background-color: rgba(255, 255, 255, 0.973);
     padding: 3% 8%;
-    border: 1px solid white;
     border-radius: 8px;
-    transition: 0.6s;
+    transition: transform .6s;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
     overflow: hidden;
 }
-.s4-card:after{
-    content: "";
-    position: absolute;
-    top: 150%;
-    left: -200px;
-    width: 120%;
-    transform: rotate(50deg);
-    background-color: #65d4aa;
-    height: 18px;
-    filter: blur(30px);
-    opacity: 0.5;
-    transition: 1s;
-}
-.s4-card:hover:after{
-    width: 225%;
-    top: -100%;
-}
 .s4-card i{
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .s4-card h2{
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -404,46 +300,28 @@ header{
     width: 100%;
     margin: 12px 0;
     color: rgb(146, 140, 140);
+    
 }
 .s4-card:hover{
-    transform: translateY(-8px);
-    border: 1.5px solid white;
+    background:linear-gradient(45deg,#6B01FF,#e81cff);
+    transform: translateY(-5px);
+}
+.s4-card:hover p{
+    color: #fff;
+    opacity: 90%;
+}
+.s4-card:hover h2{
+    color: #fff;
+}
+.s4-card:hover i{
+    color: #fff;
 }
 
-
-
-
-/* Kick Start */
-.industries h5{
-    display: flex;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: linear-gradient(to right,
-    #0030AA,#ffff,#0030AA);
-    background-size: 200%;
-    background-clip:text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 2.5s linear infinite;
-}
-.s2 .s2-para .s2-para-content{
-    width:80rem ;
-    text-align: center;
-    margin: auto;
-}
-
-
-
-/* bottom form */
-.s5{
-    height: 45vh;
-    margin-top: -7rem;
-}
+/* sectino 3 ends */
+/* section 4 starts */
 .s5-container
 {
+    height: 40vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -454,7 +332,7 @@ header{
     padding: 3rem;
     width: 30%;
     height:30vh;
-    margin-top: 10rem;
+    margin-top: 2rem;
     color: #0c0c0c;
     background-color: white;
     border: 2px solid black;
@@ -512,11 +390,10 @@ header{
     padding: 3rem;
     width: 30%;
     height:30vh;
-    margin-top: 10rem;
+    margin-top: 2rem;
     color: #0c0c0c;
     background: linear-gradient(to right, #8D19B8,#6B01FF);
     border-radius: 2px;
-    border: 1px solid white;
 }
 .s5-content2 .s5-details h2{
     display: flex;
@@ -563,14 +440,14 @@ header{
     box-shadow:   0px 0px 10px .5px black,inset 0px 0px 10px .5px white;
 }
 
-
+/* section 4 ends */
 /* footer section */
 .footer{
     padding: 80px 13% 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     background:linear-gradient(45deg,#40c9ff,#e81cff);
     position: absolute;
     left: 0;
@@ -617,11 +494,38 @@ header{
     width: 100px;
 }
 
+@media screen and (max-width:1770px)
+{
+    header{
+        padding: 22px 4%;
+    }
 
+}
+@media screen and (max-width:1670px)
+{
+    .footer{
+        padding: 50px 5% 40px;
+    }
+    :root{
+        --big-font:3.5rem;
+        --p-font:15px;
+    }
+}
 
-
-
-
+@media screen and (max-width:1120px)
+{
+    .s4-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
+    :root{
+        --big-font:3rem;
+    }
+}
 
 @media screen and (max-width:950px)
 {
@@ -658,73 +562,34 @@ header{
         left:0;
     }
 }
-@media screen and (max-width:1670px)
-{
-    .footer{
-        padding: 50px 5% 40px;
+@media screen and (max-width:768px) {
+    .section .section-container{
+        width: 80%;
+        display: block;
+        margin: auto;
     }
-    :root{
-        --big-font:3.5rem;
-        --p-font:15px;
+    .section-content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
     }
-}
-@media screen and (max-width:1120px)
-{
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-        gap: 2rem;
+    .image-section{
+        float: none;
+        width:100%;
+        margin-top:50px;
     }
-    :root{
-        --big-font:3rem;
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
     }
-}
-@media screen and (max-width:340px) {
-    .image-cards-container{
-        margin-inline: 1rem;
+    .section-container .title h1{
+        margin-top:6rem;
+        font-size: 50px;
     }
-    .card__data{
-        width: 250px;
-        padding: 1rem;
-    }
-}
-@media screen and (min-width:768px) {
-    .card__container{
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1.5rem;
-    }
-}
-@media screen and (max-width:570px)
-{
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-        gap: 2.5rem;
-    }
-    
-    :root{
-        --big-font:2.7rem;
-    }
-}
-@media screen and (min-width:1120px)
-{
-    .image-cards-container{
-        height: 100vh;
-    }
-    .card__container{
-        grid-template-columns: repeat(3,1fr);
-    }
-    .card__image{
-        width: 348px;
-    }
-    .card__data{
-        width: 316px;
-        padding-inline: 2.5rem;
-    }
-}
-@media screen and (max-width:440px)
-{
-    :root{
-        --big-font:2.5rem;
+    .section-content .section-article .button{
+        text-align: center;
     }
 }

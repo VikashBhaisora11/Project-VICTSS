@@ -99,10 +99,13 @@ header{
     display: none;
 }
 
-.services:hover .drop-down{
+.services:hover .drop-down,
+.Solutions:hover .drop-down{
     display: block;
 }
-.services a{
+
+.services a,
+.Solutions a{
     display: flex;
 }
 .dropdown-icon{
@@ -112,13 +115,15 @@ header{
     transform:rotate(0deg);
     transition: 0.3s ease-in-out all;
 }
-.services:hover .dropdown-icon{
+.services:hover .dropdown-icon,
+.Solutions:hover .dropdown-icon{
     transform: rotate(180deg);
 }
 .drop-down li:hover{
     color: #fff;
     border-radius: 0.5rem;
 }
+/* navbar ends */
 .animate-text
 {
     font-family: 'Poppins', sans-serif;
